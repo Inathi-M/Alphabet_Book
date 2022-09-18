@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var resIntArray: IntArray
 
-    var presenter = Presenter()
+    var presenter = MVP()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -119,7 +119,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         when ( view!!.id)
         {
-            R.id.buttonA->
+            R.id.button1->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //presenter.setIntent(intent)
@@ -129,7 +129,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonB->
+            R.id.button2->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //presenter.setIntent(intent)
@@ -139,7 +139,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonC->
+            R.id.button3->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //presenter.setIntent(intent)
@@ -149,7 +149,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonD->
+            R.id.button4->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 // presenter.setIntent(intent)
@@ -159,7 +159,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonE->
+            R.id.button5->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //  presenter.setIntent(intent)
@@ -169,7 +169,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonF->
+            R.id.button6->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //  presenter.setIntent(intent)
@@ -179,7 +179,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonG->
+            R.id.button7->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //  presenter.setIntent(intent)
@@ -189,7 +189,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonH->
+            R.id.button8->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 // presenter.setIntent(intent)
@@ -199,7 +199,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonI->
+            R.id.button9->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //  presenter.setIntent(intent)
@@ -209,7 +209,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonJ->
+            R.id.button10->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //    presenter.setIntent(intent)
@@ -219,7 +219,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonK->
+            R.id.button11->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //    presenter.setIntent(intent)
@@ -229,7 +229,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonL->
+            R.id.button12->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //   presenter.setIntent(intent)
@@ -239,7 +239,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonM->
+            R.id.button13->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //   presenter.setIntent(intent)
@@ -249,7 +249,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonN->
+            R.id.button14->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //   presenter.setIntent(intent)
@@ -259,7 +259,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonO->
+            R.id.button15->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //      presenter.setIntent(intent)
@@ -269,7 +269,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonP->
+            R.id.button16->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //     presenter.setIntent(intent)
@@ -279,7 +279,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonQ->
+            R.id.button17->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //   presenter.setIntent(intent)
@@ -289,7 +289,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonR->
+            R.id.button18->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //    presenter.setIntent(intent)
@@ -299,7 +299,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonS->
+            R.id.button19->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //    presenter.setIntent(intent)
@@ -309,7 +309,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonT->
+            R.id.button20->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //      presenter.setIntent(intent)
@@ -319,7 +319,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonU->
+            R.id.button21->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //    presenter.setIntent(intent)
@@ -329,7 +329,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonV->
+            R.id.button22->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //   presenter.setIntent(intent)
@@ -339,7 +339,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonW->
+            R.id.button23->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //    presenter.setIntent(intent)
@@ -349,7 +349,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonX->
+            R.id.button24->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //     presenter.setIntent(intent)
@@ -359,7 +359,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonY->
+            R.id.button25->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //      presenter.setIntent(intent)
@@ -369,7 +369,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
                 finish()
             }
-            R.id.buttonZ->
+            R.id.button26->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
                 //      presenter.setIntent(intent)
@@ -408,32 +408,32 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     fun buttonCreate(){
 
-        buttonA =  findViewById(R.id.buttonA)
-        buttonB =  findViewById(R.id.buttonB)
-        buttonC =  findViewById(R.id.buttonC)
-        buttonD =  findViewById(R.id.buttonD)
-        buttonE =  findViewById(R.id.buttonE)
-        buttonF =  findViewById(R.id.buttonF)
-        buttonG =  findViewById(R.id.buttonG)
-        buttonH =  findViewById(R.id.buttonH)
-        buttonI =  findViewById(R.id.buttonI)
-        buttonJ =  findViewById(R.id.buttonJ)
-        buttonK =  findViewById(R.id.buttonK)
-        buttonL =  findViewById(R.id.buttonL)
-        buttonM =  findViewById(R.id.buttonM)
-        buttonN =  findViewById(R.id.buttonN)
-        buttonO =  findViewById(R.id.buttonO)
-        buttonP =  findViewById(R.id.buttonP)
-        buttonQ =  findViewById(R.id.buttonQ)
-        buttonR =  findViewById(R.id.buttonR)
-        buttonS =  findViewById(R.id.buttonS)
-        buttonT =  findViewById(R.id.buttonT)
-        buttonU =  findViewById(R.id.buttonU)
-        buttonV =  findViewById(R.id.buttonV)
-        buttonW =  findViewById(R.id.buttonW)
-        buttonX =  findViewById(R.id.buttonX)
-        buttonY =  findViewById(R.id.buttonY)
-        buttonZ =  findViewById(R.id.buttonZ)
+        buttonA =  findViewById(R.id.button1)
+        buttonB =  findViewById(R.id.button2)
+        buttonC =  findViewById(R.id.button3)
+        buttonD =  findViewById(R.id.button4)
+        buttonE =  findViewById(R.id.button5)
+        buttonF =  findViewById(R.id.button6)
+        buttonG =  findViewById(R.id.button7)
+        buttonH =  findViewById(R.id.button8)
+        buttonI =  findViewById(R.id.button9)
+        buttonJ =  findViewById(R.id.button10)
+        buttonK =  findViewById(R.id.button11)
+        buttonL =  findViewById(R.id.button12)
+        buttonM =  findViewById(R.id.button13)
+        buttonN =  findViewById(R.id.button14)
+        buttonO =  findViewById(R.id.button15)
+        buttonP =  findViewById(R.id.button16)
+        buttonQ =  findViewById(R.id.button17)
+        buttonR =  findViewById(R.id.button18)
+        buttonS =  findViewById(R.id.button19)
+        buttonT =  findViewById(R.id.button20)
+        buttonU =  findViewById(R.id.button21)
+        buttonV =  findViewById(R.id.button22)
+        buttonW =  findViewById(R.id.button23)
+        buttonX =  findViewById(R.id.button24)
+        buttonY =  findViewById(R.id.button25)
+        buttonZ =  findViewById(R.id.button26)
 
         buttonA.setOnClickListener(this)
         buttonB.setOnClickListener(this)
