@@ -7,8 +7,8 @@ import android.util.Log
 class ModelClass{
 
     companion object{
-        private lateinit var rIdArray: IntArray
-        private var rIndext: Int = 0
+        private lateinit var IdArray: IntArray
+        private var Indext: Int = 0
         private var count: Boolean = false
         private lateinit var intent: Intent
         private lateinit var context: Context
@@ -26,15 +26,15 @@ class ModelClass{
         }
 
         fun getIndex():Int{
-            return rIndext
+            return Indext
         }
 
         fun setIndext(int:Int){
-            rIndext=int
+            Indext=int
         }
 
         fun getArr(): IntArray {
-            return rIdArray
+            return IdArray
         }
 
         fun setCount(){
@@ -65,7 +65,7 @@ class ModelClass{
                 }
 
             }
-            rIdArray = resArrID
+            IdArray = resArrID
         }
     }
 

@@ -30,7 +30,6 @@ class LetterActivity : AppCompatActivity(), View.OnClickListener{
         when (view!!.id) {
 
             R.id.buttonA -> {
-                //resInt1=0
                 presenter.setImageIn(0)
                 presenter.setImageLetter(imageView, applicationContext)
 

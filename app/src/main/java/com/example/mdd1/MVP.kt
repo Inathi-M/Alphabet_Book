@@ -15,8 +15,8 @@ class MVP {
 
     fun setImageLetter(imageView:ImageView, context:Context){
 
-        var bm = BitmapFactory.decodeResource(context.resources, ModelClass.getArr()?.get(ModelClass.getIndex()) ?:0 )
-        imageView.setImageBitmap(bm)
+        var bitmap = BitmapFactory.decodeResource(context.resources, ModelClass.getArr()?.get(ModelClass.getIndex()) ?:0 )
+        imageView.setImageBitmap(bitmap)
     }
 
     fun setImageIn(int:Int){

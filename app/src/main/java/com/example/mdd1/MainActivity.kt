@@ -56,9 +56,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         buttonCreate()
 
-        resIntArray = loopRes()
+        resIntArray = loopImage()
 
-        //  switchActivity()
     }
 
     fun switchActivity(){
@@ -69,7 +68,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val intent = Intent(this,LetterActivity::class.java)
             //  intent.putExtra("SHOW_WELCOME", true)
             startActivity(intent)
-            //  finish()
         }
     }
 
@@ -288,9 +286,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
-    fun loopRes():IntArray{
+    fun loopImage():IntArray{
 
-        var resArrID = IntArray(26)
+        var ArrID = IntArray(26)
 
         for (i in 1..26){
             if (i < 10) {
@@ -298,16 +296,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
                 var id:Int = resources.getIdentifier(draw, "drawable", packageName)
                 if (i==1){Log.e("Sheldon", id.toString())}
-                resArrID[i-1] = id
+                ArrID[i-1] = id
             }
             else if (i >= 10){
                 var draw: String = "slide"+i
                 var id:Int = resources.getIdentifier(draw, "drawable", packageName)
-                resArrID[i-1] = id
+                ArrID[i-1] = id
             }
 
         }
-        return resArrID
+        return ArrID
     }
 
     fun buttonCreate(){
