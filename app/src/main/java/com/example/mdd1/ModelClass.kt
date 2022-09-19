@@ -52,7 +52,6 @@ class ModelClass{
             for (i in 1..26){
                 if (i < 10) {
                     var draw: String = "slide0"+i
-                    //var draw: String = "drawable/slide0.gif"
 
                     var id:Int = context.resources.getIdentifier(draw, "drawable", context.packageName)
                     if (i==1){

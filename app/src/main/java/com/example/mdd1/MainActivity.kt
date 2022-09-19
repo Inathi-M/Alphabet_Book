@@ -1,15 +1,5 @@
 package com.example.mdd1
 
-//import androidx.appcompat.app.AppCompatActivity
-//import android.os.Bundle
-
-//class MainActivity : AppCompatActivity() {
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-//    }
-//}
-
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -26,9 +16,6 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import java.io.FileNotFoundException
 import java.lang.NullPointerException
-
-//import sun.net.ext.ExtendedSocketOptions.options
-
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var buttonA: Button
@@ -86,7 +73,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    // Function to check and request permission.
+    // Function to request permission.
     private fun checkPermission() {
         // if (ContextCompat.checkSelfPermission(this@MainActivity, permission) == PackageManager.PERMISSION_DENIED) {
         if (ContextCompat.checkSelfPermission(
@@ -95,7 +82,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             ) == PackageManager.PERMISSION_DENIED
         ) {
             // Requesting the permission
-            // ActivityCompat.requestPermissions(this@MainActivity, arrayOf(permission), requestCode)
             ActivityCompat.requestPermissions(
                 this@MainActivity,
                 arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),
@@ -105,9 +91,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             Toast.makeText(this@MainActivity, "Permission already granted", Toast.LENGTH_SHORT)
                 .show()
         }
-
-        // ActivityCompat.requestPermissions(this@MainActivity, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), 1)
-        //if (ContextCompat.checkSelfPermission(this@MainActivity, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED)
 
     }
 
@@ -122,9 +105,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button1->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //presenter.setIntent(intent)
-                //intent.putExtra("array", resIntArray)
-                //intent.putExtra("index", 0)
                 presenter.setImageIn(0)
                 startActivity(intent)
                 finish()
@@ -132,9 +112,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button2->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //presenter.setIntent(intent)
-                // intent.putExtra("array", resIntArray)
-                // intent.putExtra("index", 1)
                 presenter.setImageIn(1)
                 startActivity(intent)
                 finish()
@@ -142,9 +119,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button3->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //presenter.setIntent(intent)
-                // intent.putExtra("array", resIntArray)
-                // intent.putExtra("index", 2)
                 presenter.setImageIn(2)
                 startActivity(intent)
                 finish()
@@ -152,9 +126,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button4->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                // presenter.setIntent(intent)
-                // intent.putExtra("array", resIntArray)
-                // intent.putExtra("index", 3)
                 presenter.setImageIn(3)
                 startActivity(intent)
                 finish()
@@ -162,9 +133,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button5->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //  presenter.setIntent(intent)
-                //  intent.putExtra("array", resIntArray)
-                //  intent.putExtra("index", 4)
                 presenter.setImageIn(4)
                 startActivity(intent)
                 finish()
@@ -172,9 +140,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button6->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //  presenter.setIntent(intent)
-                //  intent.putExtra("array", resIntArray)
-                //  intent.putExtra("index", 5)
                 presenter.setImageIn(5)
                 startActivity(intent)
                 finish()
@@ -182,9 +147,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button7->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //  presenter.setIntent(intent)
-                //intent.putExtra("array", resIntArray)
-                // intent.putExtra("index", 6)
                 presenter.setImageIn(6)
                 startActivity(intent)
                 finish()
@@ -192,9 +154,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button8->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                // presenter.setIntent(intent)
-                // intent.putExtra("array", resIntArray)
-                // intent.putExtra("index", 7)
                 presenter.setImageIn(7)
                 startActivity(intent)
                 finish()
@@ -202,9 +161,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button9->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //  presenter.setIntent(intent)
-                // intent.putExtra("array", resIntArray)
-                // intent.putExtra("index", 8)
                 presenter.setImageIn(8)
                 startActivity(intent)
                 finish()
@@ -212,9 +168,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button10->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //    presenter.setIntent(intent)
-                //  intent.putExtra("array", resIntArray)
-                //  intent.putExtra("index", 9)
                 presenter.setImageIn(9)
                 startActivity(intent)
                 finish()
@@ -222,9 +175,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button11->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //    presenter.setIntent(intent)
-                //  intent.putExtra("array", resIntArray)
-                //intent.putExtra("index", 10)
                 presenter.setImageIn(10)
                 startActivity(intent)
                 finish()
@@ -232,9 +182,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button12->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //   presenter.setIntent(intent)
-                // intent.putExtra("array", resIntArray)
-                //  intent.putExtra("index", 11)
                 presenter.setImageIn(11)
                 startActivity(intent)
                 finish()
@@ -242,9 +189,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button13->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //   presenter.setIntent(intent)
-                //   intent.putExtra("array", resIntArray)
-                //   intent.putExtra("index", 12)
                 presenter.setImageIn(12)
                 startActivity(intent)
                 finish()
@@ -252,9 +196,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button14->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //   presenter.setIntent(intent)
-                //   intent.putExtra("array", resIntArray)
-                //   intent.putExtra("index", 13)
                 presenter.setImageIn(13)
                 startActivity(intent)
                 finish()
@@ -262,9 +203,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button15->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //      presenter.setIntent(intent)
-                //    intent.putExtra("array", resIntArray)
-                //    intent.putExtra("index", 14)
                 presenter.setImageIn(14)
                 startActivity(intent)
                 finish()
@@ -272,9 +210,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button16->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //     presenter.setIntent(intent)
-                //    intent.putExtra("array", resIntArray)
-                //    intent.putExtra("index", 15)
                 presenter.setImageIn(15)
                 startActivity(intent)
                 finish()
@@ -282,9 +217,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button17->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //   presenter.setIntent(intent)
-                //   intent.putExtra("array", resIntArray)
-                //   intent.putExtra("index", 16)
                 presenter.setImageIn(16)
                 startActivity(intent)
                 finish()
@@ -292,9 +224,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button18->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //    presenter.setIntent(intent)
-                //    intent.putExtra("array", resIntArray)
-                //    intent.putExtra("index", 17)
                 presenter.setImageIn(17)
                 startActivity(intent)
                 finish()
@@ -302,9 +231,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button19->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //    presenter.setIntent(intent)
-                //  intent.putExtra("array", resIntArray)
-                //intent.putExtra("index", 18)
                 presenter.setImageIn(18)
                 startActivity(intent)
                 finish()
@@ -312,9 +238,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button20->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //      presenter.setIntent(intent)
-                //    intent.putExtra("array", resIntArray)
-                //  intent.putExtra("index", 19)
                 presenter.setImageIn(19)
                 startActivity(intent)
                 finish()
@@ -322,9 +245,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button21->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //    presenter.setIntent(intent)
-                //    intent.putExtra("array", resIntArray)
-                //    intent.putExtra("index", 20)
                 presenter.setImageIn(20)
                 startActivity(intent)
                 finish()
@@ -332,9 +252,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button22->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //   presenter.setIntent(intent)
-                //   intent.putExtra("array", resIntArray)
-                //   intent.putExtra("index", 21)
                 presenter.setImageIn(21)
                 startActivity(intent)
                 finish()
@@ -342,9 +259,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button23->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //    presenter.setIntent(intent)
-                //  intent.putExtra("array", resIntArray)
-                //intent.putExtra("index", 22)
                 presenter.setImageIn(22)
                 startActivity(intent)
                 finish()
@@ -352,9 +266,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button24->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //     presenter.setIntent(intent)
-                //   intent.putExtra("array", resIntArray)
-                // intent.putExtra("index", 23)
                 presenter.setImageIn(23)
                 startActivity(intent)
                 finish()
@@ -362,9 +273,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button25->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //      presenter.setIntent(intent)
-                //    intent.putExtra("array", resIntArray)
-                //  intent.putExtra("index", 24)
                 presenter.setImageIn(24)
                 startActivity(intent)
                 finish()
@@ -372,9 +280,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.button26->
             {
                 val intent = Intent(this@MainActivity,LetterActivity::class.java)
-                //      presenter.setIntent(intent)
-                //    intent.putExtra("array", resIntArray)
-                //  intent.putExtra("index", 25)
                 presenter.setImageIn(25)
                 startActivity(intent)
                 finish()
@@ -390,7 +295,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         for (i in 1..26){
             if (i < 10) {
                 var draw: String = "slide0"+i
-                //var draw: String = "drawable/slide0.gif"
 
                 var id:Int = resources.getIdentifier(draw, "drawable", packageName)
                 if (i==1){Log.e("Sheldon", id.toString())}

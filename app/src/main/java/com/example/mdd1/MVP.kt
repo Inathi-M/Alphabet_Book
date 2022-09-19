@@ -13,10 +13,6 @@ import androidx.core.content.ContextCompat.startActivity
 
 class MVP {
 
-
-
-
-
     fun setImageLetter(imageView:ImageView, context:Context){
 
         var bm = BitmapFactory.decodeResource(context.resources, ModelClass.getArr()?.get(ModelClass.getIndex()) ?:0 )

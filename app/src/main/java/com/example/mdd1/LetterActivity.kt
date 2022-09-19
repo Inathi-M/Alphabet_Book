@@ -33,14 +33,9 @@ class LetterActivity : AppCompatActivity(), View.OnClickListener{
                 //resInt1=0
                 presenter.setImageIn(0)
                 presenter.setImageLetter(imageView, applicationContext)
-                //  var bm = BitmapFactory.decodeResource(resources, resArr1?.get(resInt1) ?:0 )
-                //  imageView.setImageBitmap(bm)
 
             }
             R.id.buttonZ -> {
-                //  resInt1=25
-                //  var bm = BitmapFactory.decodeResource(resources, resArr1?.get(resInt1) ?:0 )
-                //  imageView.setImageBitmap(bm)
                 presenter.setImageIn(25)
                 presenter.setImageLetter(imageView, applicationContext)
             }
@@ -50,11 +45,6 @@ class LetterActivity : AppCompatActivity(), View.OnClickListener{
                 finish()
             }
             R.id.buttonNext -> {
-                /* if (resInt1 != 25) {
-                     resInt1++
-                     var bm = BitmapFactory.decodeResource(resources, resArr1?.get(resInt1) ?: 0)
-                     imageView.setImageBitmap(bm)
-                 }*/
 
                 if (ModelClass.getIndex()!=25){
                     presenter.setImageIn(ModelClass.getIndex()+1)
@@ -66,16 +56,6 @@ class LetterActivity : AppCompatActivity(), View.OnClickListener{
                 }
             }
             R.id.buttonPrevious -> {
-                /*if (resInt1 != 0) {
-                    resInt1--
-                    var bm = BitmapFactory.decodeResource(resources, resArr1?.get(resInt1) ?: 0)
-                    imageView.setImageBitmap(bm)
-                }
-                else{
-                    resInt1=25
-                    var bm = BitmapFactory.decodeResource(resources, resArr1?.get(resInt1) ?: 0)
-                    imageView.setImageBitmap(bm)
-                }*/
                 if (ModelClass.getIndex()!=0){
                     presenter.setImageIn(ModelClass.getIndex()-1)
                     presenter.setImageLetter(imageView, applicationContext)
@@ -93,35 +73,17 @@ class LetterActivity : AppCompatActivity(), View.OnClickListener{
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_letter)
-        // val resInt = intent.getIntExtra("letter", 0)
-        // var resArr = intent.getIntArrayExtra("array")
-        //   resArr1 = intent.getIntArrayExtra("array")!!
-
-        //  var resInt = intent.getIntExtra("index", 0)
-        //  resInt1 = intent.getIntExtra("index", 0)
 
         imageView = findViewById(R.id.slideA)
 
         createButton()
 
-        // Log.e("Djake", resInt.toString())
-
-
-        //val imageView: ImageView = findViewById(resInt)
         var bm = BitmapFactory.decodeResource(resources, ModelClass.getArr().get(ModelClass.getIndex()) ?:0 )
         imageView.setImageBitmap(bm)
-        //val imageView: ImageView = findViewById(resInt)
-        //DisplayLetter(imageView)
 
     }
 
     fun DisplayLetter(imageView: ImageView){
-
-        // val bMap = BitmapFactory.decodeFile("/sdcard/DCIM/yuno.jpg")
-        // imageView.setImageBitmap(bMap)
-
-        //  val uri:Uri= Uri.fromFile(File(""))
-        // imageView.setImageURI(uri)
 
     }
 
